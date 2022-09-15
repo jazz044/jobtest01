@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 330px;
+}
+.form-control {
+    width: 230px;
+}
+.btn {
+    width: 230px;
+}
