@@ -1,0 +1,103 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.loginbox {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.bigtext {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-right: 17%;
+	margin-bottom: 5%;
+}
+.input {
+	width: 370px;
+	height: 70px;
+	border-radius: 15px;
+	border: 2px solid #E8E8E8FF;
+	margin-bottom: 1px;
+}
+.inputbox:nth-child(2) {
+	margin-bottom: 5%;
+}
+.button {
+	width: 375px;
+	height: 80px;
+	border-radius: 15px;
+	background: #18CFE6FF;
+	color: #fff;
+	font-size: 1.2em;
+	border: 1px solid #18CFE6FF;
+	cursor: pointer;
+
+}
+.checkboxmain {
+	margin-top: 1%;
+}
+.label {
+	cursor: pointer;
+}
+
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+	cursor: pointer;
+}
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #9FD468;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	opacity: 0;
+	transition: .2s;
+}
+.radio:checked + label:after {
+	opacity: 1;
+}
+.radio:focus + label:before {
+	box-shadow: 0 0 0 3px rgba(255,255,0,.7);
+}
+
+input[type=text], select {
+	font-size: 15px;
+	color: #919191FF;
+}
+
+:active, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+::-webkit-input-placeholder {
+	font-size: 1.4em;
+	color: #C1C1C1FF;
+}
+

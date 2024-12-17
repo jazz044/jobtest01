@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="vievport" content="width=device-width", initial-scale=1*>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Portfolio</title>
+</head>
+<body><!-- Preloader -->
+	<!--<div id="preloader" class="preloader">
+		<div class="loader"></div> 
+	</div> --> 
+<!-- Video background -->
+<div class="section" data-vide-bg="video/Hud - 22449.mp4">
+  		<div class="wrap-block">
+  			<h1>Евгений Ширшов<br><br>Junior Web Dev</h1>  			
+		</div>
+			<!--Anchor -->
+	<wrapper>
+		<div class="dws">
+		  	<div class="pulse">
+			  	<div class="next"><img src="https://img.icons8.com/ios/50/000000/next.png"/></div>
+			  	<nav id="menu">
+			  		<a href="#yak1" class="text">Tap Here</a>
+		        </nav>
+		  	</div>
+		</div>
+	</wrapper>
+</div>
+<!--portfolio navigation -->
+
+	<div class="container">
+		<div id="yak1"></div>
+		<div class="nav">
+			<a class="link" href="landing 1/index.html">Landings</a>
+			<!--<a class="link" href="#">123</a>-->
+			<a class="link" href="css 3D transform cube/index.html">Examples</a>
+			<a class="link" href="about me/index.html">About me</a>
+		</div>
+	</div>
+		
+		
+
+	</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A23ae910808ba9b39080458e36fac62dfd3961423a2660d258c3562e6d23a63bb&amp;width=100%25&amp;height=800&amp;lang=ru_RU&amp;scroll=false"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$(function() {
+	setTimeout(function() {
+  const loader = document.getElementById('preloader');
+  loader.classList.add('hide-loader');
+}, 2000);
+});
+
+
+/*Anchor slowly scroll*/
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</body>
+</html>
