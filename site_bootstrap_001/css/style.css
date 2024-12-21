@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.carousel-item img {
+    max-height: 600px;
+}
+.card {
+    margin-top: 100px;
+}
+.flex_container {
+    display: flex;
+   justify-content: space-between;
+   margin-bottom: 100px;
+}
+.card-img-top {
+    height: 200px;
+}
+
+@media (max-device-width: 1180px) {
+    .flex_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        
+    }
+    .card {
+      display: grid;
+      
+    }
+}
+
+@media (max-device-width: 700px) {
+    .flex_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
